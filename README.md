@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 🎬 PrimeFlix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação web feita com **ReactJS** que permite listar filmes populares, visualizar detalhes e salvar seus filmes favoritos usando o **localStorage**.
 
-## Available Scripts
+Este projeto consome a API pública do [The Movie Database (TMDb)](https://www.themoviedb.org/) para exibir os filmes.
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## 📸 Demonstração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ![PrimeFlix Preview](https://github.com/user-attachments/assets/12ea8196-1668-4f61-8cdc-26e036e00c9e)
+ 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `yarn test`
+## 🚀 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Listagem de filmes populares
+- Visualização de detalhes dos filmes (sinopse, nota, data de lançamento etc)
+- Marcar/desmarcar filmes como favoritos
+- Salvar favoritos no navegador com `localStorage` (mesmo após atualizar a página)
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧰 Tecnologias usadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ReactJS](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [TMDb API](https://developers.themoviedb.org/3)
+- `localStorage` para persistência dos favoritos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+## 🛠️ Como rodar o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone o repositório:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/luanraffaell/primeFlix.git
+cd primeflix
+```
+2. Instale as dependências:
+```
+npm install
+```
+3. Crie um arquivo `.env` com sua chave da API do TMDb:
+```
+REACT_APP_TMDB_API_KEY='SUA CHAVE API'
+```
+4. Inicie o projeto:
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💡 Observações
+Este projeto utiliza a API TMDb. É necessário se cadastrar no site e gerar uma chave para usar a aplicação.
+Os filmes favoritos são armazenados no navegador (via localStorage), ou seja, não há necessidade de login ou backend.
