@@ -1,0 +1,27 @@
+
+
+.page-error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+
+    h1{
+        font-size: 8rem;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: #116feb;
+        padding: 0.6rem;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 6px;
+        transition: filter 0.5s;
+    }
+    a:hover{
+        filter: brightness(0.9) ;
+    }
+}
